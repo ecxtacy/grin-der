@@ -19,7 +19,7 @@ const AddInternship = ({ handleShow }) => {
   const [formData, setFormData] = useState({
     image: "",
     imageAlt: "",
-    categories: "Grinder",
+    categories: "GrabTern",
     title: "",
     description: "",
     stipend: 0,
@@ -85,7 +85,7 @@ const AddInternship = ({ handleShow }) => {
     setFormData({
       image: "",
       imageAlt: "",
-      categories: "Grinder",
+      categories: "GrabTern",
       title: "",
       description: "",
       rating: 0,

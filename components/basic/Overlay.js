@@ -52,7 +52,7 @@ const Overlay = ({ callbackFunction }) => {
           />
           <div className={styles.overlayText}>
             <h1>Sign In</h1>
-            <p>Please select an account to continue using Grinder</p>
+            <p>Please select an account to continue using Grabtern</p>
             <p>By logging in you agree to the Terms & Conditions</p>
             <ul className="tw-text-white">
               <li className="tw-list-disc tw-list-inside">Privacy Policy</li>
