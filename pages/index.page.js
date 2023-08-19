@@ -16,6 +16,7 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import hackathonStyle from "../styles/hackathon.module.css";
 import { useState, useEffect } from "react";
+import { Banner } from "../components/homePage";
 
 const internshipsOptions = {
   margin: 40,
@@ -92,7 +93,7 @@ export default function Home() {
         </div>
       ) : null}
       <Header isUserLoggedIn={isUserLoggedIn} />
-
+      <Banner isMentorLoggedIn={isMentorLoggedIn} />
       <Footer />
     </div>
   );

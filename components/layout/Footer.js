@@ -42,7 +42,7 @@ function Footer() {
                   src="/Grabtern2.png"
                   width={140}
                   height={90}
-                  alt=""
+                  alt="Grabtern"
                   className="tw-sm:mx-60 tw-md:mx-0 tw-bg-clip-content"
                 />
               </a>
@@ -76,7 +76,7 @@ function Footer() {
           />
 
           <FooterColumn
-            heading="Grinder"
+            heading="Grabtern"
             links={[
               { href: "/refundandcancellation", text: "Refund Policy" },
               { href: "/termsandcondition", text: "Terms and Condition" },
@@ -175,7 +175,7 @@ function Footer() {
       <div className="tw-bg-base-200 tw-px-5 tw-py-4">
         <div className="tw-w-full tw-max-w-7xl tw-mx-auto">
           <p className="tw-text-base-400 tw-text-sm tw-text-center tw-font-sans">
-            Copyright &copy; {currentYear} All rights reserved | Grinder.com
+            Copyright &copy; {currentYear} All rights reserved | Grabtern.com
           </p>
         </div>
       </div>
