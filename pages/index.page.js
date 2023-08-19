@@ -94,7 +94,7 @@ export default function Home() {
       !hasPlayedGreeting ? (
         <div className="welcomeAfterLoggedIn">
           Hi 👋🏻 {userData?.user_name || mentorData?.mentor_name} <br /> Welcome
-          to Grinder
+          to GrabTern
           <audio
             src="/assets/sound/greet.wav"
             autoplay
@@ -106,19 +106,21 @@ export default function Home() {
         </div>
       ) : null}
       <Header isUserLoggedIn={isUserLoggedIn} />
-      <Banner isMentorLoggedIn={isMentorLoggedIn} />
-      {/* services section */}
-      <section className="tw-w-full tw-px-4 md: tw-mt-8 lg:-tw-mt-20">
-        <div className="tw-w-full tw-max-w-7xl tw-mx-auto">
-          <div className="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-x-6 tw-gap-y-6 tw-items-stretch tw-justify-center">
-            {servicesData.map((service, index) => (
-              <Service key={index} {...service} />
-            ))}
+      <main>
+        <Banner isMentorLoggedIn={isMentorLoggedIn} />
+        {/* services section */}
+        <section className="tw-w-full tw-px-4 md: tw-mt-8 lg:-tw-mt-0">
+          <div className="tw-w-full tw-max-w-7xl tw-mx-auto">
+            <div className="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-x-6 tw-gap-y-6 tw-items-stretch tw-justify-center">
+              {servicesData.map((service, index) => (
+                <Service key={index} {...service} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Section kicker="features" heading="Why use Grinder ?">
+        {/* internship section */}
+        <Section kicker="internships" heading="Our Featured Internships">
           <div>
             {carousel === true ? (
               <OwlCarousel
@@ -143,6 +145,57 @@ export default function Home() {
           />
         </Section>
 
+        <About />
+
+        {/* hackathon section */}
+        <Section
+          kicker="hackathon"
+          heading="Explore Top Hackathons"
+          align="center"
+        >
+          <div className="tw-grid tw-gap-8 sm:tw-grid-cols-2 lg:tw-grid-cols-4">
+            {hackathonsData.slice(0, 4).map((hackathon, index) => (
+              <Hackathon key={index} {...hackathon} />
+            ))}
+          </div>
+          <ButtonLink
+            text="View More Hackathons"
+            href="/hackathon"
+            className="tw-mx-auto tw-block tw-w-max tw-mt-10 hover:tw-text-white"
+          />
+        </Section>
+
+        {/* why to be a mentor section */}
+        <MentorSection />
+
+        {/* reviews */}
+        <Section
+          kicker="Glowing Praise"
+          heading="Reviews"
+          subheading="See what our users say about us"
+          align="center"
+        >
+          <ul className="testimonialsList">
+            {carousel === true ? (
+              <OwlCarousel
+                {...testimonialOptions}
+                autoplay={true}
+                lazyLoad={true}
+                smartSpeed={1000}
+                autoplayTimeout={3500}
+                nav={true}
+                loop={true}
+                autoplayHoverPause={true}
+                className="owl-carousel owl-theme"
+              >
+                {testiomialsData.map((testimonial, index) => (
+                  <Testimonial key={index} {...testimonial} />
+                ))}
+              </OwlCarousel>
+            ) : null}
+          </ul>
+        </Section>
+      </main>
       <Footer />
     </div>
   );

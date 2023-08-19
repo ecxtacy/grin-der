@@ -5,7 +5,7 @@ import Link from "next/link";
 // import { AiOutlineSearch } from "react-icons/ai";
 import UserProfile from "./UserProfile";
 import { SunIcon } from "@heroicons/react/24/solid";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo1.png";
 import { useAuth } from "../../context/AuthContext";
 import { ButtonLink } from "../UI";
 import clsx from "clsx";
@@ -101,13 +101,10 @@ function Header() {
               Home
             </Link>
             <Link href="/mentorList" className="hover:tw-text-primary-100">
-              Mentor
+              Grinders
             </Link>
             <Link href="/blogs" className="hover:tw-text-primary-100">
-              Blogs
-            </Link>
-            <Link href="/community" className="hover:tw-text-primary-100">
-              Community
+              Tips
             </Link>
             <Link href="/contact" className="hover:tw-text-primary-100">
               Contact
