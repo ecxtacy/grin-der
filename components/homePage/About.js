@@ -8,8 +8,8 @@ import { IconCard, Section } from "../UI";
 function About() {
   return (
     <Section
-      kicker="Be a mentee at Grabtern"
-      heading="What Grabtern Does For It's Students?"
+      kicker="Be a mentee at Grinder"
+      heading="What Grinder Does For It's Students?"
       subheading="We stay in touch with both the students and mentors throughout the mentorship process to ensure that both parties are getting the support they need and to address any issues that may arise."
       direction="row-reverse"
     >

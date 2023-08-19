@@ -11,8 +11,8 @@ function MentorSection() {
   return (
     <Section
       divClassName="!tw-flex-col md:!tw-flex-row-reverse"
-      kicker="be a mentor at Grabtern"
-      heading="Why to be Mentor at Grabtern?"
+      kicker="be a mentor at Grinder"
+      heading="Why to be Mentor at Grinder?"
       direction="row-reverse"
     >
       {/*right section Benefits list  */}
@@ -50,7 +50,7 @@ function MentorSection() {
             image="https://media.cssninja.io/shuriken/avatars/2.svg"
             heading="Anmol Aggarwal"
             subheading="Google Summer of Code Mentor"
-            body="Great Experience mentoring students on Grabtern"
+            body="Great Experience mentoring students on Grinder"
             intent="bg"
             rounded="sm"
           />
@@ -59,7 +59,7 @@ function MentorSection() {
             image="https://media.cssninja.io/shuriken/avatars/2.svg"
             heading="Syed Mohd Abbas"
             subheading="ISRO Mentor"
-            body="Mentoring students on Grabtern was a fulfilling and rewarding experience."
+            body="Mentoring students on Grinder was a fulfilling and rewarding experience."
             intent="bg"
             rounded="sm"
             direction="row-reverse"
@@ -69,7 +69,7 @@ function MentorSection() {
             image="https://media.cssninja.io/shuriken/avatars/2.svg"
             heading="Shwetank Maheshwari"
             subheading="Amazon ML Summer Mentor"
-            body="I gained valuable insights while mentoring students on Grabtern."
+            body="I gained valuable insights while mentoring students on Grinder."
             intent="bg"
             rounded="sm"
           />

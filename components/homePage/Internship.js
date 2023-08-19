@@ -24,7 +24,7 @@ function Internship({
       imageAlt={internshipImageAlt}
       heading={internshipTitle}
       link={internshipLink}
-      subheading="Grabtern"
+      subheading="Grinder"
       body={description}
     />
   );
