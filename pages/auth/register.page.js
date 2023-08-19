@@ -169,7 +169,7 @@ function Register() {
       <div className={styles.Registerform}>
         <form className="form-default" onSubmit={handleSubmit}>
           <div className={styles.heading}>
-            <img src="/Grabtern2.png" class="small-image"></img>
+            <img src="/logo1.png" class="small-image"></img>
             <h2>Hey, hello 👋</h2>
           </div>
           {/* <p >

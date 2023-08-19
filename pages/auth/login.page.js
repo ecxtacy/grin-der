@@ -168,7 +168,7 @@ function login() {
   return (
     <>
       <Head>
-        <title>Grinder | Mentors Login Here</title>
+        <title>Grinder | Legends Login Here</title>
       </Head>
 
       <Header navbarBackground={true} />
@@ -183,7 +183,7 @@ function login() {
               updateEntityTypeInUrl("user");
             }}
           >
-            User Login
+            Free Login
           </button>
           <button
             className={`${styles.btnn} ${
@@ -194,13 +194,13 @@ function login() {
               updateEntityTypeInUrl("mentor");
             }}
           >
-            Mentor Login
+            Pro Login
           </button>
         </div>
         <div>
           <form className="form-default" onSubmit={handleSubmit}>
             <div className={styles.headingg}>
-              <img src="/faviconn.png"></img>
+              <img src="/logo1.png"></img>
               <h2>
                 {" "}
                 {entityType.charAt(0).toUpperCase() +

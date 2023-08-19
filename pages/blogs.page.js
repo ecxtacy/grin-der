@@ -22,8 +22,8 @@ function Blogs({ blogsData }) {
       <Header />
       <main>
         <Section
-          kicker="Our blogs"
-          heading="Find all blogs Here"
+          kicker="Tips"
+          heading="Find all Tips Here"
           align="center"
           className="tw-mt-10"
         >
